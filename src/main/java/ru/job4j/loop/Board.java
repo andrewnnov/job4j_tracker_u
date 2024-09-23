@@ -4,8 +4,6 @@ public class Board {
     public static void paint(int width, int height) {
         for (int row = 0; row < width; row++) {
             for (int cell = 0; cell < height; cell++) {
-                /* условие проверки, что писать пробел или X */
-                /* Выше в задании мы определили закономерность, когда нужно проставлять X */
                 boolean result = (row + cell) % 2 == 0;
                 if (result) {
                     System.out.print("X");
@@ -13,7 +11,6 @@ public class Board {
                     System.out.print(" ");
                 }
             }
-            /* добавляем перевод на новую строку. */
             System.out.println();
         }
     }
