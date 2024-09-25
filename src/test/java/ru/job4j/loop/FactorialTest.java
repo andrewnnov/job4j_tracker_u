@@ -20,7 +20,7 @@ class FactorialTest {
         int expected = 1;
         int number = 0;
         int output = Factorial.calculate(number);
-        assertEquals(expected, output); // Факториал 0 должен быть равен 1
+        assertEquals(expected, output);
     }
 
 }

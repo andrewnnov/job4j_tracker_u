@@ -20,43 +20,43 @@ class CounterTest {
     @Test
     public void whenSumEvenNumbersFromOneToTen() {
         int result = sumByEven(1, 10);
-        assertEquals(30, result); // Even numbers: 2, 4, 6, 8, 10; Sum = 30
+        assertEquals(30, result);
     }
 
     @Test
     public void whenSumEvenNumbersFromZeroToFive() {
         int result = sumByEven(0, 5);
-        assertEquals(6, result); // Even numbers: 0, 2, 4; Sum = 6
+        assertEquals(6, result);
     }
 
     @Test
     public void whenStartAndFinishAreTheSameAndEven() {
         int result = sumByEven(4, 4);
-        assertEquals(4, result); // Only one even number: 4
+        assertEquals(4, result);
     }
 
     @Test
     public void whenStartAndFinishAreTheSameAndOdd() {
         int result = sumByEven(5, 5);
-        assertEquals(0, result); // No even numbers in range
+        assertEquals(0, result);
     }
 
     @Test
     public void whenRangeIsNegative() {
         int result = sumByEven(-10, -1);
-        assertEquals(-30, result); // Even numbers: -10, -8, -6, -4, -2; Sum = -30
+        assertEquals(-30, result);
     }
 
     @Test
     public void whenRangeHasNoEvenNumbers() {
         int result = sumByEven(1, 1);
-        assertEquals(0, result); // No even numbers in range
+        assertEquals(0, result);
     }
 
     @Test
     public void whenFinishIsLessThanStart() {
         int result = sumByEven(10, 5);
-        assertEquals(0, result); // Invalid range, should return 0
+        assertEquals(0, result);
     }
 
 }
