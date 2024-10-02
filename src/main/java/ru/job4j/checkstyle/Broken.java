@@ -4,11 +4,11 @@ public class Broken {
 
     private int sizeOfEmpty = 10;
 
-    public String surname;
+    private String surname;
 
-    public static final String NEW_VALUE = "";
+    private static final String NEW_VALUE = "";
 
-    String name;
+    private String name;
 
     Broken() { }
 
