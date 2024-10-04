@@ -31,7 +31,6 @@ public class Tracker {
                 results[count++] = items[index];
             }
         }
-
         return Arrays.copyOf(results, count);
     }
 
