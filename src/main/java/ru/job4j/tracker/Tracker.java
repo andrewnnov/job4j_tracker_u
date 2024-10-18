@@ -27,12 +27,6 @@ public class Tracker {
 
         List<Item> results = new ArrayList<>();
 
-//        for (int index = 0; index < items.size(); index++) {
-//            if (key.equals(items.get(index).getName())) {
-//                results.add(items.get(index));
-//            }
-//        }
-
         for (Item item : items) {
             if (key.equals(item.getName())) {
                 results.add(item);
